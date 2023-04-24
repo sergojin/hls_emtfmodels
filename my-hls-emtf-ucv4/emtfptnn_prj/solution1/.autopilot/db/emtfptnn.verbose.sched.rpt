@@ -1,0 +1,408 @@
+
+
+================================================================
+== Vivado HLS Report for 'emtfptnn'
+================================================================
+* Date:           Mon Feb 20 21:56:26 2023
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        emtfptnn_prj
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690t-ffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 7.69 ns | 8.473 ns |   0.96 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       13|       13| 0.110 us | 0.110 us |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 14
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.26>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%input1_0_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_0_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 15 'read' 'input1_0_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%input1_1_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_1_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 16 'read' 'input1_1_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%input1_2_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_2_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 17 'read' 'input1_2_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%input1_3_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_3_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 18 'read' 'input1_3_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%input1_4_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_4_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 19 'read' 'input1_4_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%input1_5_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_5_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 20 'read' 'input1_5_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%input1_6_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_6_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 21 'read' 'input1_6_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%input1_7_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_7_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 22 'read' 'input1_7_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%input1_8_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_8_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 23 'read' 'input1_8_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%input1_9_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_9_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 24 'read' 'input1_9_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%input1_10_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_10_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 25 'read' 'input1_10_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%input1_11_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_11_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 26 'read' 'input1_11_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%input1_12_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_12_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 27 'read' 'input1_12_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%input1_13_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_13_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 28 'read' 'input1_13_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%input1_14_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_14_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 29 'read' 'input1_14_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%input1_15_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_15_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 30 'read' 'input1_15_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%input1_16_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_16_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 31 'read' 'input1_16_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%input1_17_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_17_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 32 'read' 'input1_17_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%input1_18_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_18_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 33 'read' 'input1_18_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%input1_19_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_19_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 34 'read' 'input1_19_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%input1_20_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_20_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 35 'read' 'input1_20_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%input1_21_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_21_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 36 'read' 'input1_21_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%input1_22_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_22_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 37 'read' 'input1_22_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%input1_23_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_23_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 38 'read' 'input1_23_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%input1_24_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_24_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 39 'read' 'input1_24_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%input1_25_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_25_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 40 'read' 'input1_25_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%input1_26_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_26_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 41 'read' 'input1_26_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%input1_27_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_27_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 42 'read' 'input1_27_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%input1_28_V_read = call i13 @_ssdm_op_Read.ap_none.i13P(i13* %input1_28_V)" [firmware/emtfptnn.cpp:67]   --->   Operation 43 'read' 'input1_28_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (5.26ns)   --->   "%call_ret1 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @normalize.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.(i13 %input1_0_V_read, i13 %input1_1_V_read, i13 %input1_2_V_read, i13 %input1_3_V_read, i13 %input1_4_V_read, i13 %input1_5_V_read, i13 %input1_6_V_read, i13 %input1_7_V_read, i13 %input1_8_V_read, i13 %input1_9_V_read, i13 %input1_10_V_read, i13 %input1_11_V_read, i13 %input1_12_V_read, i13 %input1_13_V_read, i13 %input1_14_V_read, i13 %input1_15_V_read, i13 %input1_16_V_read, i13 %input1_17_V_read, i13 %input1_18_V_read, i13 %input1_19_V_read, i13 %input1_20_V_read, i13 %input1_21_V_read, i13 %input1_22_V_read, i13 %input1_23_V_read, i13 %input1_24_V_read, i13 %input1_25_V_read, i13 %input1_26_V_read, i13 %input1_27_V_read, i13 %input1_28_V_read)" [firmware/emtfptnn.cpp:67]   --->   Operation 44 'call' 'call_ret1' <Predicate = true> <Delay = 5.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%layer2_out_0_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 0" [firmware/emtfptnn.cpp:67]   --->   Operation 45 'extractvalue' 'layer2_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%layer2_out_1_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 1" [firmware/emtfptnn.cpp:67]   --->   Operation 46 'extractvalue' 'layer2_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%layer2_out_2_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 2" [firmware/emtfptnn.cpp:67]   --->   Operation 47 'extractvalue' 'layer2_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%layer2_out_3_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 3" [firmware/emtfptnn.cpp:67]   --->   Operation 48 'extractvalue' 'layer2_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%layer2_out_4_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 4" [firmware/emtfptnn.cpp:67]   --->   Operation 49 'extractvalue' 'layer2_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%layer2_out_5_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 5" [firmware/emtfptnn.cpp:67]   --->   Operation 50 'extractvalue' 'layer2_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%layer2_out_6_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 6" [firmware/emtfptnn.cpp:67]   --->   Operation 51 'extractvalue' 'layer2_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%layer2_out_7_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 7" [firmware/emtfptnn.cpp:67]   --->   Operation 52 'extractvalue' 'layer2_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%layer2_out_8_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 8" [firmware/emtfptnn.cpp:67]   --->   Operation 53 'extractvalue' 'layer2_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%layer2_out_9_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 9" [firmware/emtfptnn.cpp:67]   --->   Operation 54 'extractvalue' 'layer2_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%layer2_out_10_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 10" [firmware/emtfptnn.cpp:67]   --->   Operation 55 'extractvalue' 'layer2_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%layer2_out_11_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 11" [firmware/emtfptnn.cpp:67]   --->   Operation 56 'extractvalue' 'layer2_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%layer2_out_12_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 12" [firmware/emtfptnn.cpp:67]   --->   Operation 57 'extractvalue' 'layer2_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%layer2_out_13_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 13" [firmware/emtfptnn.cpp:67]   --->   Operation 58 'extractvalue' 'layer2_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%layer2_out_14_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 14" [firmware/emtfptnn.cpp:67]   --->   Operation 59 'extractvalue' 'layer2_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%layer2_out_15_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 15" [firmware/emtfptnn.cpp:67]   --->   Operation 60 'extractvalue' 'layer2_out_15_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%layer2_out_16_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 16" [firmware/emtfptnn.cpp:67]   --->   Operation 61 'extractvalue' 'layer2_out_16_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%layer2_out_17_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 17" [firmware/emtfptnn.cpp:67]   --->   Operation 62 'extractvalue' 'layer2_out_17_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%layer2_out_18_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 18" [firmware/emtfptnn.cpp:67]   --->   Operation 63 'extractvalue' 'layer2_out_18_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%layer2_out_19_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 19" [firmware/emtfptnn.cpp:67]   --->   Operation 64 'extractvalue' 'layer2_out_19_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%layer2_out_20_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 20" [firmware/emtfptnn.cpp:67]   --->   Operation 65 'extractvalue' 'layer2_out_20_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%layer2_out_21_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 21" [firmware/emtfptnn.cpp:67]   --->   Operation 66 'extractvalue' 'layer2_out_21_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%layer2_out_22_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 22" [firmware/emtfptnn.cpp:67]   --->   Operation 67 'extractvalue' 'layer2_out_22_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%layer2_out_23_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 23" [firmware/emtfptnn.cpp:67]   --->   Operation 68 'extractvalue' 'layer2_out_23_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%layer2_out_24_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 24" [firmware/emtfptnn.cpp:67]   --->   Operation 69 'extractvalue' 'layer2_out_24_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%layer2_out_25_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 25" [firmware/emtfptnn.cpp:67]   --->   Operation 70 'extractvalue' 'layer2_out_25_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%layer2_out_26_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 26" [firmware/emtfptnn.cpp:67]   --->   Operation 71 'extractvalue' 'layer2_out_26_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%layer2_out_27_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 27" [firmware/emtfptnn.cpp:67]   --->   Operation 72 'extractvalue' 'layer2_out_27_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%layer2_out_28_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret1, 28" [firmware/emtfptnn.cpp:67]   --->   Operation 73 'extractvalue' 'layer2_out_28_V' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 6.19>
+ST_2 : Operation 74 [4/4] (6.19ns)   --->   "%call_ret2 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0(i24 %layer2_out_0_V, i24 %layer2_out_1_V, i24 %layer2_out_2_V, i24 %layer2_out_3_V, i24 %layer2_out_4_V, i24 %layer2_out_5_V, i24 %layer2_out_6_V, i24 %layer2_out_7_V, i24 %layer2_out_8_V, i24 %layer2_out_9_V, i24 %layer2_out_10_V, i24 %layer2_out_11_V, i24 %layer2_out_12_V, i24 %layer2_out_13_V, i24 %layer2_out_14_V, i24 %layer2_out_15_V, i24 %layer2_out_16_V, i24 %layer2_out_17_V, i24 %layer2_out_18_V, i24 %layer2_out_19_V, i24 %layer2_out_20_V, i24 %layer2_out_21_V, i24 %layer2_out_22_V, i24 %layer2_out_23_V, i24 %layer2_out_24_V, i24 %layer2_out_25_V, i24 %layer2_out_26_V, i24 %layer2_out_27_V, i24 %layer2_out_28_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 74 'call' 'call_ret2' <Predicate = true> <Delay = 6.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 6.20>
+ST_3 : Operation 75 [3/4] (6.20ns)   --->   "%call_ret2 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0(i24 %layer2_out_0_V, i24 %layer2_out_1_V, i24 %layer2_out_2_V, i24 %layer2_out_3_V, i24 %layer2_out_4_V, i24 %layer2_out_5_V, i24 %layer2_out_6_V, i24 %layer2_out_7_V, i24 %layer2_out_8_V, i24 %layer2_out_9_V, i24 %layer2_out_10_V, i24 %layer2_out_11_V, i24 %layer2_out_12_V, i24 %layer2_out_13_V, i24 %layer2_out_14_V, i24 %layer2_out_15_V, i24 %layer2_out_16_V, i24 %layer2_out_17_V, i24 %layer2_out_18_V, i24 %layer2_out_19_V, i24 %layer2_out_20_V, i24 %layer2_out_21_V, i24 %layer2_out_22_V, i24 %layer2_out_23_V, i24 %layer2_out_24_V, i24 %layer2_out_25_V, i24 %layer2_out_26_V, i24 %layer2_out_27_V, i24 %layer2_out_28_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 75 'call' 'call_ret2' <Predicate = true> <Delay = 6.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 6.20>
+ST_4 : Operation 76 [2/4] (6.20ns)   --->   "%call_ret2 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0(i24 %layer2_out_0_V, i24 %layer2_out_1_V, i24 %layer2_out_2_V, i24 %layer2_out_3_V, i24 %layer2_out_4_V, i24 %layer2_out_5_V, i24 %layer2_out_6_V, i24 %layer2_out_7_V, i24 %layer2_out_8_V, i24 %layer2_out_9_V, i24 %layer2_out_10_V, i24 %layer2_out_11_V, i24 %layer2_out_12_V, i24 %layer2_out_13_V, i24 %layer2_out_14_V, i24 %layer2_out_15_V, i24 %layer2_out_16_V, i24 %layer2_out_17_V, i24 %layer2_out_18_V, i24 %layer2_out_19_V, i24 %layer2_out_20_V, i24 %layer2_out_21_V, i24 %layer2_out_22_V, i24 %layer2_out_23_V, i24 %layer2_out_24_V, i24 %layer2_out_25_V, i24 %layer2_out_26_V, i24 %layer2_out_27_V, i24 %layer2_out_28_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 76 'call' 'call_ret2' <Predicate = true> <Delay = 6.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 6.20>
+ST_5 : Operation 77 [1/4] (6.20ns)   --->   "%call_ret2 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0(i24 %layer2_out_0_V, i24 %layer2_out_1_V, i24 %layer2_out_2_V, i24 %layer2_out_3_V, i24 %layer2_out_4_V, i24 %layer2_out_5_V, i24 %layer2_out_6_V, i24 %layer2_out_7_V, i24 %layer2_out_8_V, i24 %layer2_out_9_V, i24 %layer2_out_10_V, i24 %layer2_out_11_V, i24 %layer2_out_12_V, i24 %layer2_out_13_V, i24 %layer2_out_14_V, i24 %layer2_out_15_V, i24 %layer2_out_16_V, i24 %layer2_out_17_V, i24 %layer2_out_18_V, i24 %layer2_out_19_V, i24 %layer2_out_20_V, i24 %layer2_out_21_V, i24 %layer2_out_22_V, i24 %layer2_out_23_V, i24 %layer2_out_24_V, i24 %layer2_out_25_V, i24 %layer2_out_26_V, i24 %layer2_out_27_V, i24 %layer2_out_28_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 77 'call' 'call_ret2' <Predicate = true> <Delay = 6.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%layer3_out_0_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 0" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 78 'extractvalue' 'layer3_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%layer3_out_1_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 1" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 79 'extractvalue' 'layer3_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%layer3_out_2_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 2" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 80 'extractvalue' 'layer3_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%layer3_out_3_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 3" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 81 'extractvalue' 'layer3_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%layer3_out_4_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 4" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 82 'extractvalue' 'layer3_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%layer3_out_5_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 5" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 83 'extractvalue' 'layer3_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%layer3_out_6_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 6" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 84 'extractvalue' 'layer3_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%layer3_out_7_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 7" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 85 'extractvalue' 'layer3_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%layer3_out_8_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 8" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 86 'extractvalue' 'layer3_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%layer3_out_9_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 9" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 87 'extractvalue' 'layer3_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%layer3_out_10_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 10" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 88 'extractvalue' 'layer3_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%layer3_out_11_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 11" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 89 'extractvalue' 'layer3_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%layer3_out_12_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 12" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 90 'extractvalue' 'layer3_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%layer3_out_13_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 13" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 91 'extractvalue' 'layer3_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (0.00ns)   --->   "%layer3_out_14_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 14" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 92 'extractvalue' 'layer3_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%layer3_out_15_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 15" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 93 'extractvalue' 'layer3_out_15_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%layer3_out_16_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 16" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 94 'extractvalue' 'layer3_out_16_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 95 [1/1] (0.00ns)   --->   "%layer3_out_17_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 17" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 95 'extractvalue' 'layer3_out_17_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 96 [1/1] (0.00ns)   --->   "%layer3_out_18_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 18" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 96 'extractvalue' 'layer3_out_18_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 97 [1/1] (0.00ns)   --->   "%layer3_out_19_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret2, 19" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71]   --->   Operation 97 'extractvalue' 'layer3_out_19_V' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 5.05>
+ST_6 : Operation 98 [3/3] (5.05ns)   --->   "%call_ret3 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @"tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config6>"(i24 %layer3_out_0_V, i24 %layer3_out_1_V, i24 %layer3_out_2_V, i24 %layer3_out_3_V, i24 %layer3_out_4_V, i24 %layer3_out_5_V, i24 %layer3_out_6_V, i24 %layer3_out_7_V, i24 %layer3_out_8_V, i24 %layer3_out_9_V, i24 %layer3_out_10_V, i24 %layer3_out_11_V, i24 %layer3_out_12_V, i24 %layer3_out_13_V, i24 %layer3_out_14_V, i24 %layer3_out_15_V, i24 %layer3_out_16_V, i24 %layer3_out_17_V, i24 %layer3_out_18_V, i24 %layer3_out_19_V)" [firmware/emtfptnn.cpp:75]   --->   Operation 98 'call' 'call_ret3' <Predicate = true> <Delay = 5.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 5.05>
+ST_7 : Operation 99 [2/3] (5.05ns)   --->   "%call_ret3 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @"tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config6>"(i24 %layer3_out_0_V, i24 %layer3_out_1_V, i24 %layer3_out_2_V, i24 %layer3_out_3_V, i24 %layer3_out_4_V, i24 %layer3_out_5_V, i24 %layer3_out_6_V, i24 %layer3_out_7_V, i24 %layer3_out_8_V, i24 %layer3_out_9_V, i24 %layer3_out_10_V, i24 %layer3_out_11_V, i24 %layer3_out_12_V, i24 %layer3_out_13_V, i24 %layer3_out_14_V, i24 %layer3_out_15_V, i24 %layer3_out_16_V, i24 %layer3_out_17_V, i24 %layer3_out_18_V, i24 %layer3_out_19_V)" [firmware/emtfptnn.cpp:75]   --->   Operation 99 'call' 'call_ret3' <Predicate = true> <Delay = 5.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 2.26>
+ST_8 : Operation 100 [1/3] (2.26ns)   --->   "%call_ret3 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @"tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config6>"(i24 %layer3_out_0_V, i24 %layer3_out_1_V, i24 %layer3_out_2_V, i24 %layer3_out_3_V, i24 %layer3_out_4_V, i24 %layer3_out_5_V, i24 %layer3_out_6_V, i24 %layer3_out_7_V, i24 %layer3_out_8_V, i24 %layer3_out_9_V, i24 %layer3_out_10_V, i24 %layer3_out_11_V, i24 %layer3_out_12_V, i24 %layer3_out_13_V, i24 %layer3_out_14_V, i24 %layer3_out_15_V, i24 %layer3_out_16_V, i24 %layer3_out_17_V, i24 %layer3_out_18_V, i24 %layer3_out_19_V)" [firmware/emtfptnn.cpp:75]   --->   Operation 100 'call' 'call_ret3' <Predicate = true> <Delay = 2.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 101 [1/1] (0.00ns)   --->   "%layer6_out_0_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 0" [firmware/emtfptnn.cpp:75]   --->   Operation 101 'extractvalue' 'layer6_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 102 [1/1] (0.00ns)   --->   "%layer6_out_1_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 1" [firmware/emtfptnn.cpp:75]   --->   Operation 102 'extractvalue' 'layer6_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 103 [1/1] (0.00ns)   --->   "%layer6_out_2_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 2" [firmware/emtfptnn.cpp:75]   --->   Operation 103 'extractvalue' 'layer6_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 104 [1/1] (0.00ns)   --->   "%layer6_out_3_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 3" [firmware/emtfptnn.cpp:75]   --->   Operation 104 'extractvalue' 'layer6_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 105 [1/1] (0.00ns)   --->   "%layer6_out_4_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 4" [firmware/emtfptnn.cpp:75]   --->   Operation 105 'extractvalue' 'layer6_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 106 [1/1] (0.00ns)   --->   "%layer6_out_5_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 5" [firmware/emtfptnn.cpp:75]   --->   Operation 106 'extractvalue' 'layer6_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 107 [1/1] (0.00ns)   --->   "%layer6_out_6_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 6" [firmware/emtfptnn.cpp:75]   --->   Operation 107 'extractvalue' 'layer6_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 108 [1/1] (0.00ns)   --->   "%layer6_out_7_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 7" [firmware/emtfptnn.cpp:75]   --->   Operation 108 'extractvalue' 'layer6_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 109 [1/1] (0.00ns)   --->   "%layer6_out_8_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 8" [firmware/emtfptnn.cpp:75]   --->   Operation 109 'extractvalue' 'layer6_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 110 [1/1] (0.00ns)   --->   "%layer6_out_9_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 9" [firmware/emtfptnn.cpp:75]   --->   Operation 110 'extractvalue' 'layer6_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 111 [1/1] (0.00ns)   --->   "%layer6_out_10_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 10" [firmware/emtfptnn.cpp:75]   --->   Operation 111 'extractvalue' 'layer6_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 112 [1/1] (0.00ns)   --->   "%layer6_out_11_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 11" [firmware/emtfptnn.cpp:75]   --->   Operation 112 'extractvalue' 'layer6_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 113 [1/1] (0.00ns)   --->   "%layer6_out_12_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 12" [firmware/emtfptnn.cpp:75]   --->   Operation 113 'extractvalue' 'layer6_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 114 [1/1] (0.00ns)   --->   "%layer6_out_13_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 13" [firmware/emtfptnn.cpp:75]   --->   Operation 114 'extractvalue' 'layer6_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 115 [1/1] (0.00ns)   --->   "%layer6_out_14_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 14" [firmware/emtfptnn.cpp:75]   --->   Operation 115 'extractvalue' 'layer6_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 116 [1/1] (0.00ns)   --->   "%layer6_out_15_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 15" [firmware/emtfptnn.cpp:75]   --->   Operation 116 'extractvalue' 'layer6_out_15_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 117 [1/1] (0.00ns)   --->   "%layer6_out_16_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 16" [firmware/emtfptnn.cpp:75]   --->   Operation 117 'extractvalue' 'layer6_out_16_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 118 [1/1] (0.00ns)   --->   "%layer6_out_17_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 17" [firmware/emtfptnn.cpp:75]   --->   Operation 118 'extractvalue' 'layer6_out_17_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 119 [1/1] (0.00ns)   --->   "%layer6_out_18_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 18" [firmware/emtfptnn.cpp:75]   --->   Operation 119 'extractvalue' 'layer6_out_18_V' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 120 [1/1] (0.00ns)   --->   "%layer6_out_19_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret3, 19" [firmware/emtfptnn.cpp:75]   --->   Operation 120 'extractvalue' 'layer6_out_19_V' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 6.20>
+ST_9 : Operation 121 [2/2] (6.20ns)   --->   "%call_ret4 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0(i24 %layer6_out_0_V, i24 %layer6_out_1_V, i24 %layer6_out_2_V, i24 %layer6_out_3_V, i24 %layer6_out_4_V, i24 %layer6_out_5_V, i24 %layer6_out_6_V, i24 %layer6_out_7_V, i24 %layer6_out_8_V, i24 %layer6_out_9_V, i24 %layer6_out_10_V, i24 %layer6_out_11_V, i24 %layer6_out_12_V, i24 %layer6_out_13_V, i24 %layer6_out_14_V, i24 %layer6_out_15_V, i24 %layer6_out_16_V, i24 %layer6_out_17_V, i24 %layer6_out_18_V, i24 %layer6_out_19_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 121 'call' 'call_ret4' <Predicate = true> <Delay = 6.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 5.46>
+ST_10 : Operation 122 [1/2] (5.46ns)   --->   "%call_ret4 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0(i24 %layer6_out_0_V, i24 %layer6_out_1_V, i24 %layer6_out_2_V, i24 %layer6_out_3_V, i24 %layer6_out_4_V, i24 %layer6_out_5_V, i24 %layer6_out_6_V, i24 %layer6_out_7_V, i24 %layer6_out_8_V, i24 %layer6_out_9_V, i24 %layer6_out_10_V, i24 %layer6_out_11_V, i24 %layer6_out_12_V, i24 %layer6_out_13_V, i24 %layer6_out_14_V, i24 %layer6_out_15_V, i24 %layer6_out_16_V, i24 %layer6_out_17_V, i24 %layer6_out_18_V, i24 %layer6_out_19_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 122 'call' 'call_ret4' <Predicate = true> <Delay = 5.46> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 123 [1/1] (0.00ns)   --->   "%layer7_out_0_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 0" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 123 'extractvalue' 'layer7_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 124 [1/1] (0.00ns)   --->   "%layer7_out_1_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 1" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 124 'extractvalue' 'layer7_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 125 [1/1] (0.00ns)   --->   "%layer7_out_2_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 2" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 125 'extractvalue' 'layer7_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 126 [1/1] (0.00ns)   --->   "%layer7_out_3_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 3" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 126 'extractvalue' 'layer7_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 127 [1/1] (0.00ns)   --->   "%layer7_out_4_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 4" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 127 'extractvalue' 'layer7_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 128 [1/1] (0.00ns)   --->   "%layer7_out_5_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 5" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 128 'extractvalue' 'layer7_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 129 [1/1] (0.00ns)   --->   "%layer7_out_6_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 6" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 129 'extractvalue' 'layer7_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 130 [1/1] (0.00ns)   --->   "%layer7_out_7_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 7" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 130 'extractvalue' 'layer7_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 131 [1/1] (0.00ns)   --->   "%layer7_out_8_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 8" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 131 'extractvalue' 'layer7_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 132 [1/1] (0.00ns)   --->   "%layer7_out_9_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 9" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 132 'extractvalue' 'layer7_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 133 [1/1] (0.00ns)   --->   "%layer7_out_10_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 10" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 133 'extractvalue' 'layer7_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 134 [1/1] (0.00ns)   --->   "%layer7_out_11_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 11" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 134 'extractvalue' 'layer7_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 135 [1/1] (0.00ns)   --->   "%layer7_out_12_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 12" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 135 'extractvalue' 'layer7_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 136 [1/1] (0.00ns)   --->   "%layer7_out_13_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 13" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 136 'extractvalue' 'layer7_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 137 [1/1] (0.00ns)   --->   "%layer7_out_14_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 14" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 137 'extractvalue' 'layer7_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 138 [1/1] (0.00ns)   --->   "%layer7_out_15_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret4, 15" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79]   --->   Operation 138 'extractvalue' 'layer7_out_15_V' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 5.05>
+ST_11 : Operation 139 [3/3] (5.05ns)   --->   "%call_ret5 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @"tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config10>"(i24 %layer7_out_0_V, i24 %layer7_out_1_V, i24 %layer7_out_2_V, i24 %layer7_out_3_V, i24 %layer7_out_4_V, i24 %layer7_out_5_V, i24 %layer7_out_6_V, i24 %layer7_out_7_V, i24 %layer7_out_8_V, i24 %layer7_out_9_V, i24 %layer7_out_10_V, i24 %layer7_out_11_V, i24 %layer7_out_12_V, i24 %layer7_out_13_V, i24 %layer7_out_14_V, i24 %layer7_out_15_V)" [firmware/emtfptnn.cpp:83]   --->   Operation 139 'call' 'call_ret5' <Predicate = true> <Delay = 5.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 5.05>
+ST_12 : Operation 140 [2/3] (5.05ns)   --->   "%call_ret5 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @"tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config10>"(i24 %layer7_out_0_V, i24 %layer7_out_1_V, i24 %layer7_out_2_V, i24 %layer7_out_3_V, i24 %layer7_out_4_V, i24 %layer7_out_5_V, i24 %layer7_out_6_V, i24 %layer7_out_7_V, i24 %layer7_out_8_V, i24 %layer7_out_9_V, i24 %layer7_out_10_V, i24 %layer7_out_11_V, i24 %layer7_out_12_V, i24 %layer7_out_13_V, i24 %layer7_out_14_V, i24 %layer7_out_15_V)" [firmware/emtfptnn.cpp:83]   --->   Operation 140 'call' 'call_ret5' <Predicate = true> <Delay = 5.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 8.47>
+ST_13 : Operation 141 [1/3] (2.26ns)   --->   "%call_ret5 = call fastcc { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } @"tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config10>"(i24 %layer7_out_0_V, i24 %layer7_out_1_V, i24 %layer7_out_2_V, i24 %layer7_out_3_V, i24 %layer7_out_4_V, i24 %layer7_out_5_V, i24 %layer7_out_6_V, i24 %layer7_out_7_V, i24 %layer7_out_8_V, i24 %layer7_out_9_V, i24 %layer7_out_10_V, i24 %layer7_out_11_V, i24 %layer7_out_12_V, i24 %layer7_out_13_V, i24 %layer7_out_14_V, i24 %layer7_out_15_V)" [firmware/emtfptnn.cpp:83]   --->   Operation 141 'call' 'call_ret5' <Predicate = true> <Delay = 2.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 142 [1/1] (0.00ns)   --->   "%layer10_out_0_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 0" [firmware/emtfptnn.cpp:83]   --->   Operation 142 'extractvalue' 'layer10_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 143 [1/1] (0.00ns)   --->   "%layer10_out_1_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 1" [firmware/emtfptnn.cpp:83]   --->   Operation 143 'extractvalue' 'layer10_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 144 [1/1] (0.00ns)   --->   "%layer10_out_2_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 2" [firmware/emtfptnn.cpp:83]   --->   Operation 144 'extractvalue' 'layer10_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 145 [1/1] (0.00ns)   --->   "%layer10_out_3_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 3" [firmware/emtfptnn.cpp:83]   --->   Operation 145 'extractvalue' 'layer10_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 146 [1/1] (0.00ns)   --->   "%layer10_out_4_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 4" [firmware/emtfptnn.cpp:83]   --->   Operation 146 'extractvalue' 'layer10_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 147 [1/1] (0.00ns)   --->   "%layer10_out_5_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 5" [firmware/emtfptnn.cpp:83]   --->   Operation 147 'extractvalue' 'layer10_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 148 [1/1] (0.00ns)   --->   "%layer10_out_6_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 6" [firmware/emtfptnn.cpp:83]   --->   Operation 148 'extractvalue' 'layer10_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 149 [1/1] (0.00ns)   --->   "%layer10_out_7_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 7" [firmware/emtfptnn.cpp:83]   --->   Operation 149 'extractvalue' 'layer10_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 150 [1/1] (0.00ns)   --->   "%layer10_out_8_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 8" [firmware/emtfptnn.cpp:83]   --->   Operation 150 'extractvalue' 'layer10_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 151 [1/1] (0.00ns)   --->   "%layer10_out_9_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 9" [firmware/emtfptnn.cpp:83]   --->   Operation 151 'extractvalue' 'layer10_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 152 [1/1] (0.00ns)   --->   "%layer10_out_10_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 10" [firmware/emtfptnn.cpp:83]   --->   Operation 152 'extractvalue' 'layer10_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 153 [1/1] (0.00ns)   --->   "%layer10_out_11_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 11" [firmware/emtfptnn.cpp:83]   --->   Operation 153 'extractvalue' 'layer10_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 154 [1/1] (0.00ns)   --->   "%layer10_out_12_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 12" [firmware/emtfptnn.cpp:83]   --->   Operation 154 'extractvalue' 'layer10_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 155 [1/1] (0.00ns)   --->   "%layer10_out_13_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 13" [firmware/emtfptnn.cpp:83]   --->   Operation 155 'extractvalue' 'layer10_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 156 [1/1] (0.00ns)   --->   "%layer10_out_14_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 14" [firmware/emtfptnn.cpp:83]   --->   Operation 156 'extractvalue' 'layer10_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 157 [1/1] (0.00ns)   --->   "%layer10_out_15_V = extractvalue { i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24, i24 } %call_ret5, 15" [firmware/emtfptnn.cpp:83]   --->   Operation 157 'extractvalue' 'layer10_out_15_V' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 158 [2/2] (6.20ns)   --->   "%call_ret6 = call fastcc { i24, i24 } @"dense_latency<ap_fixed,ap_fixed,config11>.0.0.0"(i24 %layer10_out_0_V, i24 %layer10_out_1_V, i24 %layer10_out_2_V, i24 %layer10_out_3_V, i24 %layer10_out_4_V, i24 %layer10_out_5_V, i24 %layer10_out_6_V, i24 %layer10_out_7_V, i24 %layer10_out_8_V, i24 %layer10_out_9_V, i24 %layer10_out_10_V, i24 %layer10_out_11_V, i24 %layer10_out_12_V, i24 %layer10_out_13_V, i24 %layer10_out_14_V, i24 %layer10_out_15_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:87]   --->   Operation 158 'call' 'call_ret6' <Predicate = true> <Delay = 6.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 5.72>
+ST_14 : Operation 159 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %layer12_out_1_V), !map !154"   --->   Operation 159 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 160 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %layer12_out_0_V), !map !160"   --->   Operation 160 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 161 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_28_V), !map !166"   --->   Operation 161 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 162 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_27_V), !map !172"   --->   Operation 162 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 163 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_26_V), !map !178"   --->   Operation 163 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 164 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_25_V), !map !184"   --->   Operation 164 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 165 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_24_V), !map !190"   --->   Operation 165 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 166 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_23_V), !map !196"   --->   Operation 166 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 167 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_22_V), !map !202"   --->   Operation 167 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 168 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_21_V), !map !208"   --->   Operation 168 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 169 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_20_V), !map !214"   --->   Operation 169 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 170 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_19_V), !map !220"   --->   Operation 170 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 171 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_18_V), !map !226"   --->   Operation 171 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 172 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_17_V), !map !232"   --->   Operation 172 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 173 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_16_V), !map !238"   --->   Operation 173 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 174 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_15_V), !map !244"   --->   Operation 174 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 175 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_14_V), !map !250"   --->   Operation 175 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 176 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_13_V), !map !256"   --->   Operation 176 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 177 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_12_V), !map !262"   --->   Operation 177 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 178 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_11_V), !map !268"   --->   Operation 178 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 179 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_10_V), !map !274"   --->   Operation 179 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 180 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_9_V), !map !280"   --->   Operation 180 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 181 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_8_V), !map !286"   --->   Operation 181 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 182 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_7_V), !map !292"   --->   Operation 182 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 183 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_6_V), !map !298"   --->   Operation 183 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 184 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_5_V), !map !304"   --->   Operation 184 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 185 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_4_V), !map !310"   --->   Operation 185 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 186 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_3_V), !map !316"   --->   Operation 186 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 187 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_2_V), !map !322"   --->   Operation 187 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 188 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_1_V), !map !328"   --->   Operation 188 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 189 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i13* %input1_0_V), !map !332"   --->   Operation 189 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 190 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_in_1), !map !336"   --->   Operation 190 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 191 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_out_1), !map !342"   --->   Operation 191 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 192 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @emtfptnn_str) nounwind"   --->   Operation 192 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 193 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i13* %input1_0_V, i13* %input1_1_V, i13* %input1_2_V, i13* %input1_3_V, i13* %input1_4_V, i13* %input1_5_V, i13* %input1_6_V, i13* %input1_7_V, i13* %input1_8_V, i13* %input1_9_V, i13* %input1_10_V, i13* %input1_11_V, i13* %input1_12_V, i13* %input1_13_V, i13* %input1_14_V, i13* %input1_15_V, i13* %input1_16_V, i13* %input1_17_V, i13* %input1_18_V, i13* %input1_19_V, i13* %input1_20_V, i13* %input1_21_V, i13* %input1_22_V, i13* %input1_23_V, i13* %input1_24_V, i13* %input1_25_V, i13* %input1_26_V, i13* %input1_27_V, i13* %input1_28_V, [8 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str9, [1 x i8]* @p_str9, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str9) nounwind" [firmware/emtfptnn.cpp:34]   --->   Operation 193 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 194 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %layer12_out_0_V, i8* %layer12_out_1_V, [7 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str9, [1 x i8]* @p_str9, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str9) nounwind" [firmware/emtfptnn.cpp:35]   --->   Operation 194 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 195 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9) nounwind" [firmware/emtfptnn.cpp:36]   --->   Operation 195 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 196 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLatency(i32 1, i32 13, [1 x i8]* @p_str9) nounwind" [firmware/emtfptnn.cpp:37]   --->   Operation 196 'speclatency' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 197 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %const_size_in_1, i16 29)" [firmware/emtfptnn.cpp:40]   --->   Operation 197 'write' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 198 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %const_size_out_1, i16 2)" [firmware/emtfptnn.cpp:41]   --->   Operation 198 'write' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 199 [1/2] (4.13ns)   --->   "%call_ret6 = call fastcc { i24, i24 } @"dense_latency<ap_fixed,ap_fixed,config11>.0.0.0"(i24 %layer10_out_0_V, i24 %layer10_out_1_V, i24 %layer10_out_2_V, i24 %layer10_out_3_V, i24 %layer10_out_4_V, i24 %layer10_out_5_V, i24 %layer10_out_6_V, i24 %layer10_out_7_V, i24 %layer10_out_8_V, i24 %layer10_out_9_V, i24 %layer10_out_10_V, i24 %layer10_out_11_V, i24 %layer10_out_12_V, i24 %layer10_out_13_V, i24 %layer10_out_14_V, i24 %layer10_out_15_V)" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:87]   --->   Operation 199 'call' 'call_ret6' <Predicate = true> <Delay = 4.13> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 200 [1/1] (0.00ns)   --->   "%layer11_out_0_V = extractvalue { i24, i24 } %call_ret6, 0" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:87]   --->   Operation 200 'extractvalue' 'layer11_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 201 [1/1] (0.00ns)   --->   "%layer11_out_1_V = extractvalue { i24, i24 } %call_ret6, 1" [firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:87]   --->   Operation 201 'extractvalue' 'layer11_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 202 [1/1] (1.59ns)   --->   "%call_ret = call fastcc { i8, i8 } @"relu<ap_fixed<24, 8, 5, 3, 0>, ap_uint<8>, relu_config12>"(i24 %layer11_out_0_V, i24 %layer11_out_1_V)" [firmware/emtfptnn.cpp:89]   --->   Operation 202 'call' 'call_ret' <Predicate = true> <Delay = 1.59> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 203 [1/1] (0.00ns)   --->   "%layer12_out_V_0_ret = extractvalue { i8, i8 } %call_ret, 0" [firmware/emtfptnn.cpp:89]   --->   Operation 203 'extractvalue' 'layer12_out_V_0_ret' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 204 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i8P(i8* %layer12_out_0_V, i8 %layer12_out_V_0_ret)" [firmware/emtfptnn.cpp:89]   --->   Operation 204 'write' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 205 [1/1] (0.00ns)   --->   "%layer12_out_V_1_ret = extractvalue { i8, i8 } %call_ret, 1" [firmware/emtfptnn.cpp:89]   --->   Operation 205 'extractvalue' 'layer12_out_V_1_ret' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 206 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i8P(i8* %layer12_out_1_V, i8 %layer12_out_V_1_ret)" [firmware/emtfptnn.cpp:89]   --->   Operation 206 'write' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 207 [1/1] (0.00ns)   --->   "ret void" [firmware/emtfptnn.cpp:91]   --->   Operation 207 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.69ns, clock uncertainty: 0.961ns.
+
+ <State 1>: 5.26ns
+The critical path consists of the following:
+	wire read on port 'input1_0_V' (firmware/emtfptnn.cpp:67) [77]  (0 ns)
+	'call' operation ('call_ret1', firmware/emtfptnn.cpp:67) to 'normalize.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.' [106]  (5.26 ns)
+
+ <State 2>: 6.19ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71) to 'dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0' [136]  (6.19 ns)
+
+ <State 3>: 6.21ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71) to 'dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0' [136]  (6.21 ns)
+
+ <State 4>: 6.21ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71) to 'dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0' [136]  (6.21 ns)
+
+ <State 5>: 6.2ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:71) to 'dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0' [136]  (6.2 ns)
+
+ <State 6>: 5.06ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/emtfptnn.cpp:75) to 'tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config6>' [157]  (5.06 ns)
+
+ <State 7>: 5.06ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/emtfptnn.cpp:75) to 'tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config6>' [157]  (5.06 ns)
+
+ <State 8>: 2.27ns
+The critical path consists of the following:
+	'call' operation ('call_ret3', firmware/emtfptnn.cpp:75) to 'tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config6>' [157]  (2.27 ns)
+
+ <State 9>: 6.21ns
+The critical path consists of the following:
+	'call' operation ('call_ret4', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79) to 'dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0' [178]  (6.21 ns)
+
+ <State 10>: 5.47ns
+The critical path consists of the following:
+	'call' operation ('call_ret4', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:79) to 'dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0' [178]  (5.47 ns)
+
+ <State 11>: 5.06ns
+The critical path consists of the following:
+	'call' operation ('call_ret5', firmware/emtfptnn.cpp:83) to 'tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config10>' [195]  (5.06 ns)
+
+ <State 12>: 5.06ns
+The critical path consists of the following:
+	'call' operation ('call_ret5', firmware/emtfptnn.cpp:83) to 'tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config10>' [195]  (5.06 ns)
+
+ <State 13>: 8.47ns
+The critical path consists of the following:
+	'call' operation ('call_ret5', firmware/emtfptnn.cpp:83) to 'tanh<ap_fixed,ap_fixed<24,8,5,3,0>,tanh_config10>' [195]  (2.27 ns)
+	'call' operation ('call_ret6', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:87) to 'dense_latency<ap_fixed,ap_fixed,config11>.0.0.0' [212]  (6.21 ns)
+
+ <State 14>: 5.73ns
+The critical path consists of the following:
+	'call' operation ('call_ret6', firmware/nnet_utils/nnet_dense.h:46->firmware/emtfptnn.cpp:87) to 'dense_latency<ap_fixed,ap_fixed,config11>.0.0.0' [212]  (4.13 ns)
+	'call' operation ('call_ret', firmware/emtfptnn.cpp:89) to 'relu<ap_fixed<24, 8, 5, 3, 0>, ap_uint<8>, relu_config12>' [215]  (1.59 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

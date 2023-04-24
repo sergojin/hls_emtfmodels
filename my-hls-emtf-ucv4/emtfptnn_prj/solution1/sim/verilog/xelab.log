@@ -1,0 +1,52 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/data/Xilinx/Vivado/2020.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /data/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_emtfptnn_top glbl -prj emtfptnn.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /data/Xilinx/Vivado/2020.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s emtfptnn -debug wave 
+Multi-threading is on. Using 30 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/emtfptnn.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_emtfptnn_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_latency_ap_fixed_ap_fixed_config11_0_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/emtfptnn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module emtfptnn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom
+INFO: [VRFC 10-311] analyzing module tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/sim/verilog/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom
+INFO: [VRFC 10-311] analyzing module tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dense_latency_0_0_0_0_0_0_0_0_0_...
+Compiling module xil_defaultlib.dense_latency_0_0_0_0_0_0_0_0_0_...
+Compiling module xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_...
+Compiling module xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_...
+Compiling module xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_...
+Compiling module xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_...
+Compiling module xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_...
+Compiling module xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_...
+Compiling module xil_defaultlib.dense_latency_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.normalize_0_0_0_0_0_0_0_0_0_0_0_...
+Compiling module xil_defaultlib.relu_ap_fixed_24_8_5_3_0_ap_uint...
+Compiling module xil_defaultlib.emtfptnn
+Compiling module xil_defaultlib.apatb_emtfptnn_top
+Compiling module work.glbl
+Built simulation snapshot emtfptnn

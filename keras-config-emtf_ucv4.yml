@@ -1,0 +1,19 @@
+KerasJson: /home/sergo/ucv4.json
+KerasH5:   /home/sergo/ucv4_weights.h5
+OutputDir: my-hls-emtf-ucv4
+ProjectName: emtfptnn
+XilinxPart: xc7vx690tffg1927-2
+#XilinxPart: xcvu9p-flga2104-2-i
+ClockPeriod: 7
+
+IOType: io_parallel # Options: io_serial/io_parallel
+HLSConfig:
+  Model:
+    Precision: ap_fixed<24,14>
+    ReuseFactor: 1
+  LayerType:
+    InputLayer:
+      Precision: ap_fixed<13,13>
+  LayerName:
+    layer11_out:
+      Precision: ap_fixed<8,8>

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="emtfptnn.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_emtfptnn_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group3">
+            <obj_property name="label">const_size_out_1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/const_size_out_1_ap_vld">
+               <obj_property name="ElementShortName">const_size_out_1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">const_size_out_1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/const_size_out_1">
+               <obj_property name="ElementShortName">const_size_out_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">const_size_out_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group6">
+            <obj_property name="label">const_size_in_1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/const_size_in_1_ap_vld">
+               <obj_property name="ElementShortName">const_size_in_1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">const_size_in_1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/const_size_in_1">
+               <obj_property name="ElementShortName">const_size_in_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">const_size_in_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group9">
+            <obj_property name="label">layer12_out(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/layer12_out_1_V_ap_vld">
+               <obj_property name="ElementShortName">layer12_out_1_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_1_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/layer12_out_1_V">
+               <obj_property name="ElementShortName">layer12_out_1_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_1_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/layer12_out_0_V_ap_vld">
+               <obj_property name="ElementShortName">layer12_out_0_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_0_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/layer12_out_0_V">
+               <obj_property name="ElementShortName">layer12_out_0_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_0_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group14">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group15">
+            <obj_property name="label">input1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_28_V">
+               <obj_property name="ElementShortName">input1_28_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_28_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_27_V">
+               <obj_property name="ElementShortName">input1_27_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_27_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_26_V">
+               <obj_property name="ElementShortName">input1_26_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_26_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_25_V">
+               <obj_property name="ElementShortName">input1_25_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_25_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_24_V">
+               <obj_property name="ElementShortName">input1_24_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_24_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_23_V">
+               <obj_property name="ElementShortName">input1_23_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_23_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_22_V">
+               <obj_property name="ElementShortName">input1_22_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_22_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_21_V">
+               <obj_property name="ElementShortName">input1_21_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_21_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_20_V">
+               <obj_property name="ElementShortName">input1_20_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_20_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_19_V">
+               <obj_property name="ElementShortName">input1_19_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_19_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_18_V">
+               <obj_property name="ElementShortName">input1_18_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_18_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_17_V">
+               <obj_property name="ElementShortName">input1_17_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_17_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_16_V">
+               <obj_property name="ElementShortName">input1_16_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_16_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_15_V">
+               <obj_property name="ElementShortName">input1_15_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_15_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_14_V">
+               <obj_property name="ElementShortName">input1_14_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_14_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_13_V">
+               <obj_property name="ElementShortName">input1_13_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_13_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_12_V">
+               <obj_property name="ElementShortName">input1_12_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_12_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_11_V">
+               <obj_property name="ElementShortName">input1_11_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_11_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_10_V">
+               <obj_property name="ElementShortName">input1_10_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_10_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_9_V">
+               <obj_property name="ElementShortName">input1_9_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_9_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_8_V">
+               <obj_property name="ElementShortName">input1_8_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_8_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_7_V">
+               <obj_property name="ElementShortName">input1_7_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_7_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_6_V">
+               <obj_property name="ElementShortName">input1_6_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_6_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_5_V">
+               <obj_property name="ElementShortName">input1_5_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_5_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_4_V">
+               <obj_property name="ElementShortName">input1_4_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_4_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_3_V">
+               <obj_property name="ElementShortName">input1_3_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_3_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_2_V">
+               <obj_property name="ElementShortName">input1_2_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_2_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_1_V">
+               <obj_property name="ElementShortName">input1_1_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_1_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/input1_0_V">
+               <obj_property name="ElementShortName">input1_0_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_0_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group45">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/ap_idle">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group50">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/ap_rst">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group52">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_emtfptnn_top/AESL_inst_emtfptnn/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group54">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group55">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group56">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group57">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_0_V">
+               <obj_property name="ElementShortName">LENGTH_input1_0_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_0_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_1_V">
+               <obj_property name="ElementShortName">LENGTH_input1_1_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_1_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_2_V">
+               <obj_property name="ElementShortName">LENGTH_input1_2_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_2_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_3_V">
+               <obj_property name="ElementShortName">LENGTH_input1_3_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_3_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_4_V">
+               <obj_property name="ElementShortName">LENGTH_input1_4_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_4_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_5_V">
+               <obj_property name="ElementShortName">LENGTH_input1_5_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_5_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_6_V">
+               <obj_property name="ElementShortName">LENGTH_input1_6_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_6_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_7_V">
+               <obj_property name="ElementShortName">LENGTH_input1_7_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_7_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_8_V">
+               <obj_property name="ElementShortName">LENGTH_input1_8_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_8_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_9_V">
+               <obj_property name="ElementShortName">LENGTH_input1_9_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_9_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_10_V">
+               <obj_property name="ElementShortName">LENGTH_input1_10_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_10_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_11_V">
+               <obj_property name="ElementShortName">LENGTH_input1_11_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_11_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_12_V">
+               <obj_property name="ElementShortName">LENGTH_input1_12_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_12_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_13_V">
+               <obj_property name="ElementShortName">LENGTH_input1_13_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_13_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_14_V">
+               <obj_property name="ElementShortName">LENGTH_input1_14_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_14_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_15_V">
+               <obj_property name="ElementShortName">LENGTH_input1_15_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_15_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_16_V">
+               <obj_property name="ElementShortName">LENGTH_input1_16_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_16_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_17_V">
+               <obj_property name="ElementShortName">LENGTH_input1_17_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_17_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_18_V">
+               <obj_property name="ElementShortName">LENGTH_input1_18_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_18_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_19_V">
+               <obj_property name="ElementShortName">LENGTH_input1_19_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_19_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_20_V">
+               <obj_property name="ElementShortName">LENGTH_input1_20_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_20_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_21_V">
+               <obj_property name="ElementShortName">LENGTH_input1_21_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_21_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_22_V">
+               <obj_property name="ElementShortName">LENGTH_input1_22_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_22_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_23_V">
+               <obj_property name="ElementShortName">LENGTH_input1_23_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_23_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_24_V">
+               <obj_property name="ElementShortName">LENGTH_input1_24_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_24_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_25_V">
+               <obj_property name="ElementShortName">LENGTH_input1_25_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_25_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_26_V">
+               <obj_property name="ElementShortName">LENGTH_input1_26_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_26_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_27_V">
+               <obj_property name="ElementShortName">LENGTH_input1_27_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_27_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_input1_28_V">
+               <obj_property name="ElementShortName">LENGTH_input1_28_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input1_28_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_layer12_out_0_V">
+               <obj_property name="ElementShortName">LENGTH_layer12_out_0_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_layer12_out_0_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_layer12_out_1_V">
+               <obj_property name="ElementShortName">LENGTH_layer12_out_1_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_layer12_out_1_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_const_size_in_1">
+               <obj_property name="ElementShortName">LENGTH_const_size_in_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_const_size_in_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/LENGTH_const_size_out_1">
+               <obj_property name="ElementShortName">LENGTH_const_size_out_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_const_size_out_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group94">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group95">
+            <obj_property name="label">const_size_out_1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/const_size_out_1_ap_vld">
+               <obj_property name="ElementShortName">const_size_out_1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">const_size_out_1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/const_size_out_1">
+               <obj_property name="ElementShortName">const_size_out_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">const_size_out_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group98">
+            <obj_property name="label">const_size_in_1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/const_size_in_1_ap_vld">
+               <obj_property name="ElementShortName">const_size_in_1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">const_size_in_1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/const_size_in_1">
+               <obj_property name="ElementShortName">const_size_in_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">const_size_in_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group101">
+            <obj_property name="label">layer12_out(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/layer12_out_1_V_ap_vld">
+               <obj_property name="ElementShortName">layer12_out_1_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_1_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/layer12_out_1_V">
+               <obj_property name="ElementShortName">layer12_out_1_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_1_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_emtfptnn_top/layer12_out_0_V_ap_vld">
+               <obj_property name="ElementShortName">layer12_out_0_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_0_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/layer12_out_0_V">
+               <obj_property name="ElementShortName">layer12_out_0_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">layer12_out_0_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group106">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group107">
+            <obj_property name="label">input1(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_28_V">
+               <obj_property name="ElementShortName">input1_28_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_28_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_27_V">
+               <obj_property name="ElementShortName">input1_27_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_27_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_26_V">
+               <obj_property name="ElementShortName">input1_26_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_26_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_25_V">
+               <obj_property name="ElementShortName">input1_25_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_25_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_24_V">
+               <obj_property name="ElementShortName">input1_24_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_24_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_23_V">
+               <obj_property name="ElementShortName">input1_23_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_23_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_22_V">
+               <obj_property name="ElementShortName">input1_22_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_22_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_21_V">
+               <obj_property name="ElementShortName">input1_21_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_21_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_20_V">
+               <obj_property name="ElementShortName">input1_20_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_20_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_19_V">
+               <obj_property name="ElementShortName">input1_19_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_19_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_18_V">
+               <obj_property name="ElementShortName">input1_18_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_18_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_17_V">
+               <obj_property name="ElementShortName">input1_17_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_17_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_16_V">
+               <obj_property name="ElementShortName">input1_16_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_16_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_15_V">
+               <obj_property name="ElementShortName">input1_15_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_15_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_14_V">
+               <obj_property name="ElementShortName">input1_14_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_14_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_13_V">
+               <obj_property name="ElementShortName">input1_13_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_13_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_12_V">
+               <obj_property name="ElementShortName">input1_12_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_12_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_11_V">
+               <obj_property name="ElementShortName">input1_11_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_11_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_10_V">
+               <obj_property name="ElementShortName">input1_10_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_10_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_9_V">
+               <obj_property name="ElementShortName">input1_9_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_9_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_8_V">
+               <obj_property name="ElementShortName">input1_8_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_8_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_7_V">
+               <obj_property name="ElementShortName">input1_7_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_7_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_6_V">
+               <obj_property name="ElementShortName">input1_6_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_6_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_5_V">
+               <obj_property name="ElementShortName">input1_5_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_5_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_4_V">
+               <obj_property name="ElementShortName">input1_4_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_4_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_3_V">
+               <obj_property name="ElementShortName">input1_3_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_3_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_2_V">
+               <obj_property name="ElementShortName">input1_2_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_2_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_1_V">
+               <obj_property name="ElementShortName">input1_1_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_1_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_emtfptnn_top/input1_0_V">
+               <obj_property name="ElementShortName">input1_0_V[12:0]</obj_property>
+               <obj_property name="ObjectShortName">input1_0_V[12:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

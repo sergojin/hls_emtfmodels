@@ -1,0 +1,124 @@
+
+
+================================================================
+== Vivado HLS Report for 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s'
+================================================================
+* Date:           Mon Feb 20 21:56:26 2023
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        emtfptnn_prj
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690t-ffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 7.69 ns | 1.592 ns |   0.96 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.59>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%data_1_V_read_3 = call i24 @_ssdm_op_Read.ap_auto.i24(i24 %data_1_V_read)" [firmware/nnet_utils/nnet_activation.h:69]   --->   Operation 2 'read' 'data_1_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%data_0_V_read_3 = call i24 @_ssdm_op_Read.ap_auto.i24(i24 %data_0_V_read)" [firmware/nnet_utils/nnet_activation.h:69]   --->   Operation 3 'read' 'data_0_V_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str12)" [firmware/nnet_utils/nnet_activation.h:71]   --->   Operation 4 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9) nounwind" [firmware/nnet_utils/nnet_activation.h:72]   --->   Operation 5 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str12, i32 %tmp)" [firmware/nnet_utils/nnet_activation.h:73]   --->   Operation 6 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.22ns)   --->   "%icmp_ln1494 = icmp sgt i24 %data_0_V_read_3, 0" [firmware/nnet_utils/nnet_activation.h:81]   --->   Operation 7 'icmp' 'icmp_ln1494' <Predicate = true> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_Result_s = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %data_0_V_read_3, i32 16, i32 23)" [firmware/nnet_utils/nnet_activation.h:81]   --->   Operation 8 'partselect' 'p_Result_s' <Predicate = (icmp_ln1494)> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.37ns)   --->   "%select_ln1494 = select i1 %icmp_ln1494, i8 %p_Result_s, i8 0" [firmware/nnet_utils/nnet_activation.h:81]   --->   Operation 9 'select' 'select_ln1494' <Predicate = true> <Delay = 0.37> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (1.22ns)   --->   "%icmp_ln1494_1 = icmp sgt i24 %data_1_V_read_3, 0" [firmware/nnet_utils/nnet_activation.h:81]   --->   Operation 10 'icmp' 'icmp_ln1494_1' <Predicate = true> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_Result_1 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %data_1_V_read_3, i32 16, i32 23)" [firmware/nnet_utils/nnet_activation.h:81]   --->   Operation 11 'partselect' 'p_Result_1' <Predicate = (icmp_ln1494_1)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.37ns)   --->   "%select_ln1494_1 = select i1 %icmp_ln1494_1, i8 %p_Result_1, i8 0" [firmware/nnet_utils/nnet_activation.h:81]   --->   Operation 12 'select' 'select_ln1494_1' <Predicate = true> <Delay = 0.37> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i8, i8 } undef, i8 %select_ln1494, 0" [firmware/nnet_utils/nnet_activation.h:84]   --->   Operation 13 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i8, i8 } %mrv, i8 %select_ln1494_1, 1" [firmware/nnet_utils/nnet_activation.h:84]   --->   Operation 14 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "ret { i8, i8 } %mrv_1" [firmware/nnet_utils/nnet_activation.h:84]   --->   Operation 15 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.69ns, clock uncertainty: 0.961ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	wire read on port 'data_1_V_read' (firmware/nnet_utils/nnet_activation.h:69) [3]  (0 ns)
+	'icmp' operation ('icmp_ln1494_1', firmware/nnet_utils/nnet_activation.h:81) [11]  (1.22 ns)
+	'select' operation ('res[1].V', firmware/nnet_utils/nnet_activation.h:81) [13]  (0.372 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/emtfptnn_prj/solution1/./sim/autowrap/testbench/emtfptnn.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,35 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <config>
+        <config_array_partition maximum_size="4096"/>
+        <config_compile name_max_length="60"/>
+        <schedule model="emtfptnn"/>
+        <config_export format="ip_catalog"/>
+    </config>
+    <Simulation argv="">
+        <SimFlow name="cosim" setup="false" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" reduce_diskspace="false" toolName="auto">
+            <Rtl name="systemc" active="false"/>
+            <Rtl name="verilog" active="true"/>
+            <Rtl name="vhdl" active="false"/>
+        </SimFlow>
+    </Simulation>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="" vendor="" library="" ipname="" version="" driver_input_dir="" display_name="" taxonomy=""/>
+    </ExportDesign>
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="emtfptnn_prj"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7vx690t:-ffg1927:-2"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtex7/virtex7" name="DefaultPlatform"/>
+        <library value="xilinx/virtex7/virtex7_fpv6" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="130MHz"/>
+    </clockList>
+</AutoPilot:solution>
+

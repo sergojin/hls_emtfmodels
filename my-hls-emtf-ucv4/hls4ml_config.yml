@@ -1,0 +1,14 @@
+ClockPeriod: 7
+HLSConfig:
+  LayerName:
+    layer11_out: {Precision: 'ap_fixed<8,8>'}
+  LayerType:
+    InputLayer: {Precision: 'ap_fixed<13,13>'}
+  Model: {Precision: 'ap_fixed<24,14>', ReuseFactor: 1}
+IOType: io_parallel
+KerasH5: /home/sergo/ucv4_weights.h5
+KerasJson: /home/sergo/ucv4.json
+OutputDir: my-hls-emtf-ucv4
+ProjectName: emtfptnn
+Stamp: bD6cdB4d
+XilinxPart: xc7vx690tffg1927-2

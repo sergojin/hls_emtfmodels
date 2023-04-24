@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 20 21:33:14 2023
+# Process ID: 71541
+# Current directory: /home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4
+# Command line: vivado -mode batch -source vivado_synth.tcl
+# Log file: /home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/vivado.log
+# Journal file: /home/sergo/howto-4jf/example-models/my-hls-emtf-ucv4/vivado.jou
+#-----------------------------------------------------------
+source vivado_synth.tcl

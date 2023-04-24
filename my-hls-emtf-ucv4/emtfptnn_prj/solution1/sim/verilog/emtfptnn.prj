@@ -1,0 +1,13 @@
+sv work "glbl.v"
+sv xil_defaultlib "emtfptnn.autotb.v"
+sv xil_defaultlib "normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.v"
+sv xil_defaultlib "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v"
+sv xil_defaultlib "tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.v"
+sv xil_defaultlib "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.v"
+sv xil_defaultlib "tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.v"
+sv xil_defaultlib "dense_latency_ap_fixed_ap_fixed_config11_0_0_0.v"
+sv xil_defaultlib "relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.v"
+sv xil_defaultlib "emtfptnn.v"
+sv xil_defaultlib "tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb.v"
+sv xil_defaultlib "tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud.v"
+
